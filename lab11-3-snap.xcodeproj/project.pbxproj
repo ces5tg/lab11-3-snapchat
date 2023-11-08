@@ -74,8 +74,8 @@
 				134D47A72AFAF32A003D7A84 /* AppDelegate.swift */,
 				134D47A92AFAF32A003D7A84 /* SceneDelegate.swift */,
 				134D47AB2AFAF32A003D7A84 /* iniciarSesionViewController.swift */,
-				134D47CE2AFB0C49003D7A84 /* Main.storyboard */,
 				134D47B02AFAF32C003D7A84 /* Assets.xcassets */,
+				134D47CE2AFB0C49003D7A84 /* Main.storyboard */,
 				134D47B22AFAF32C003D7A84 /* LaunchScreen.storyboard */,
 				134D47B52AFAF32C003D7A84 /* Info.plist */,
 			);

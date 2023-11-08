@@ -80,13 +80,13 @@
                                     <action selector="IniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qfy-nN-A5B"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-lJ-a9h" customClass="GIDSignInButton">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-lJ-a9h" customClass="GIDSignInButton">
                                 <rect key="frame" x="82" y="519" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="HEn-RO-bTp"/>
-                                    <constraint firstAttribute="width" constant="250" id="ZQw-jV-pWw"/>
-                                </constraints>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L3y-eN-hYc"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -94,7 +94,6 @@
                         <constraints>
                             <constraint firstItem="eRW-o5-qbc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Zr-D7-uIn"/>
                             <constraint firstItem="Ob7-hy-ubD" firstAttribute="centerX" secondItem="24h-Fg-z0j" secondAttribute="centerX" id="2Kf-1w-BAs"/>
-                            <constraint firstItem="NLg-lJ-a9h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gar-el-svk"/>
                             <constraint firstItem="kpB-sw-sDf" firstAttribute="top" secondItem="24h-Fg-z0j" secondAttribute="bottom" constant="20" id="TxC-MS-DiO"/>
                             <constraint firstItem="eRW-o5-qbc" firstAttribute="centerX" secondItem="Ob7-hy-ubD" secondAttribute="centerX" id="Uoo-k8-nWT"/>
                             <constraint firstItem="24h-Fg-z0j" firstAttribute="centerX" secondItem="kpB-sw-sDf" secondAttribute="centerX" id="YyY-JF-QKK"/>
@@ -103,7 +102,6 @@
                             <constraint firstItem="QJx-aF-Pm8" firstAttribute="top" secondItem="kpB-sw-sDf" secondAttribute="bottom" constant="30" id="pHx-KB-Ul6"/>
                             <constraint firstItem="SHN-lL-9hD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qXZ-aY-KM6"/>
                             <constraint firstItem="SHN-lL-9hD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sNN-ze-wtJ"/>
-                            <constraint firstItem="NLg-lJ-a9h" firstAttribute="top" secondItem="QJx-aF-Pm8" secondAttribute="bottom" constant="20" id="tu1-m6-geF"/>
                             <constraint firstItem="Ob7-hy-ubD" firstAttribute="top" secondItem="eRW-o5-qbc" secondAttribute="bottom" constant="20" id="u0F-3e-J2i"/>
                             <constraint firstItem="kpB-sw-sDf" firstAttribute="centerX" secondItem="QJx-aF-Pm8" secondAttribute="centerX" id="zen-Zl-20h"/>
                         </constraints>

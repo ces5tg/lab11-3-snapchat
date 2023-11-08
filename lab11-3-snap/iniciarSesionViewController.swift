@@ -15,21 +15,8 @@ class iniciarSesionViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
-    @IBAction func IniciarSesionTapped(_ sender: Any) {
-        
-        
-        Auth.auth().signIn(withEmail: emailTextField.text! , password:passwordTextField.text!){(user , error) in
-                    print("intentando iniciar sesion")
-                    if error != nil{
-                        print("se presneto el siguiente error \(error)")
-                    }else {
-                        print("incio de sesion exitoro")
-                    }
-                }
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+   
+    @IBAction func login(_ sender: Any) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 
         // Create Google Sign In configuration object.
@@ -54,11 +41,33 @@ class iniciarSesionViewController: UIViewController {
                                                          accessToken: user.accessToken.tokenString)
 
             Auth.auth().signIn(with: credential) { result, error in
-
+                if let error = error{
+                    print("error")
+                }else{
+                    print("inicio de sesion exitoso")
+                }
               // At this point, our user is signed in
             }
-                
         }
+        
+    }
+    
+    @IBAction func IniciarSesionTapped(_ sender: Any) {
+        
+        
+        Auth.auth().signIn(withEmail: emailTextField.text! , password:passwordTextField.text!){(user , error) in
+                    print("intentando iniciar sesion")
+                    if error != nil{
+                        print("se presneto el siguiente error \(error)")
+                    }else {
+                        print("incio de sesion exitoro")
+                    }
+                }
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
     }
     
     
